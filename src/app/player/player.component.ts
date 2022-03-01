@@ -17,10 +17,7 @@ export class PlayerComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void { 
-    //    .subscribe(params => {
-    //     this.player = PLAYERS.find(player => {
-    //     let paramId: string = params.get('id') || '';
-    //     return distributor.id === parseInt(paramId);
+
     }
 
   findPlayer(){
@@ -30,20 +27,7 @@ export class PlayerComponent implements OnInit {
       this.players = response;
       console.log(this.players);
       console.log(this.searchPlayer);
-
-
-    // .subscribe((response) => {
-      
-    //   console.log(response);
-    //   this.player = response;
-    //   console.log(searchPlayer);
-      
-      
-      
-      
-      
-
-    });
+ });
    
    
   }
