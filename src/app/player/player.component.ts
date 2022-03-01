@@ -8,23 +8,47 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements OnInit {
 
-  playerName: string = '';
+  searchPlayer: any = '';
+  players: any;
+  search: any;
   player: any;
 
-  findPlayer(playerName: string) : void {
+
+  constructor(private http: HttpClient) { }
+
+  ngOnInit(): void { 
+    //    .subscribe(params => {
+    //     this.player = PLAYERS.find(player => {
+    //     let paramId: string = params.get('id') || '';
+    //     return distributor.id === parseInt(paramId);
+    }
+
+  findPlayer(){
     this.http
-    .get(`https://soccerstars-backend.herokuapp.com/api/players?playerName=${playerName}`)
-    .subscribe((response) => {
-      console.log(response);
-      this.player = response;
+    .get('https://soccerstars-backend.herokuapp.com/api/players')
+    .subscribe((response: any) => {
+      this.players = response;
+      console.log(this.players);
+      console.log(this.searchPlayer);
+
+
+    // .subscribe((response) => {
+      
+    //   console.log(response);
+    //   this.player = response;
+    //   console.log(searchPlayer);
+      
+      
+      
+      
+      
+
     });
    
    
   }
 
-  constructor(private http: HttpClient) { }
 
-  ngOnInit(): void {
-  }
+  
 
 }
