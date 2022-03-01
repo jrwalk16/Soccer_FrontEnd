@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerComponent implements OnInit {
 
-  constructor() { }
+  playerName: string = '';
+  player: any;
+
+  findPlayer(playerName: string) : void {
+    this.http
+    .get(`https://soccerstars-backend.herokuapp.com/api/players`)
+    .subscribe((response) => {
+      console.log(response);
+      this.player = response;
+    });
+   
+   
+  }
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
   }

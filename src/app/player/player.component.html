@@ -1,5 +1,19 @@
-<p>player works!</p>
-<form id="form"> 
+<!-- <p>player works!</p> -->
+<!-- <form id="form"> 
     <input type="search" id="query" name="q" placeholder="Player Search">
     <button>Search</button>
-  </form>
+  </form> -->
+  <section>
+    <h2>Who is your favorite Player</h2>
+     <!-- {{playerName}} -->
+    <input [(ngModel)]="playerName" type="text" placeholder="Enter Player Name"/>
+    <input (click)="findPlayer(playerName)" type="submit" value="Search"/>
+</section>
+<section *ngIf="player">
+  <h3>Here's is your favorite player:</h3>
+  <p> {{playerName}}</p>
+  <p>{{player[0].playerName}}</p> 
+  <p>{{player[0].position}}</p>
+  
+  
+</section>
