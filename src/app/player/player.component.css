@@ -1,11 +1,28 @@
-#form{
-    object-position: center right;
-}
+
 
 p {
     color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h2 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 td {
     color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, Geneva, Tahoma, sans-serif, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+#bar {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+}
+
+li {
+    color: Yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
 }

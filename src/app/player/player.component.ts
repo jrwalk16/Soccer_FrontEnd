@@ -12,9 +12,12 @@ export class PlayerComponent implements OnInit {
   players: any;
   search: any;
   player: any;
+
   constructor(private http: HttpClient) { }
+
   ngOnInit(): void {
     }
+    
   findPlayer(){
     this.http
     .get('https://soccerstars-backend.herokuapp.com/api/players')
