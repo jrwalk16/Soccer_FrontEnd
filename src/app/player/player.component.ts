@@ -13,7 +13,7 @@ export class PlayerComponent implements OnInit {
 
   findPlayer(playerName: string) : void {
     this.http
-    .get(`https://soccerstars-backend.herokuapp.com/api/players`)
+    .get(`https://soccerstars-backend.herokuapp.com/api/players?playerName=${playerName}`)
     .subscribe((response) => {
       console.log(response);
       this.player = response;
