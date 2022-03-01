@@ -1,23 +1,18 @@
 
   <section>
     <h2>Who is your favorite Player</h2>
-    
     <input [(ngModel)]="searchPlayer" type="text" placeholder="Enter player Name"/>
     <input (click)="findPlayer()" type="submit" value="Search"/>
     <section *ngIf="players">
-      
     </section>
     <tr *ngFor="let player of players">
-      <ul>
-        <ng-container *ngIf="player.playerName === searchPlayer"> 
-          <li>{{player.playerName}}</li><br>
-          <li>{{player.position}}</li><br>
-          <li>{{player.goalsScored}}</li><br>
-          <li>{{player.assists}}</li><br>
-          <li>{{player.cleanSheets}}</li><br>
-          
-        </ng-container> 
-      </ul>
+        <ng-container *ngIf="player.playerName === searchPlayer">
+          <td>{{player.playerName}}</td><br>
+          <td>{{player.position}}</td><br>
+          <td>{{player.goalsScored}}</td><br>
+          <td>{{player.assists}}</td><br>
+          <td>{{player.cleanSheets}}</td><br>
+        </ng-container>
       </tr>
 </section>
     
