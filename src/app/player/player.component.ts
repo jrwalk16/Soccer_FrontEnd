@@ -24,8 +24,7 @@ export class PlayerComponent implements OnInit {
     .get('https://soccerstars-backend.herokuapp.com/api/players')
     .subscribe((response: any) => {
       this.players = response;
-      console.log(this.players);
-      console.log(this.searchPlayer);
+      
  });
   }
 
