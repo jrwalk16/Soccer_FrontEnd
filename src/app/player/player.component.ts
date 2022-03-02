@@ -12,6 +12,7 @@ export class PlayerComponent implements OnInit {
   players: any;
   search: any;
   player: any;
+  templatName: any;
 
   constructor(private http: HttpClient) { }
 
@@ -27,4 +28,6 @@ export class PlayerComponent implements OnInit {
       console.log(this.searchPlayer);
  });
   }
+
+  
 }

@@ -9,12 +9,14 @@
     </section>
     <tr *ngFor="let player of players">
         <ng-container *ngIf="player.playerName === searchPlayer">
-          <!-- <p>{{player.playerName}}</p> -->
           <li>Position - {{player.position}}</li>
           <li>Goals Scored - {{player.goalsScored}}</li>
           <li>Assists - {{player.assists}}</li>
           <li>Clean Sheets - {{player.cleanSheets}}</li>
+         
         </ng-container>
+
+       
       </tr>
     </div>
 </section>
