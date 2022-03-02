@@ -9,7 +9,24 @@ Link to connected back end project https://github.com/jrwalk16/SoccerStats_Java
 Link to hosted site https://soccer-front-end-7mew8laay-jrwalk16.vercel.app/
 
 
+### Process
 
+
+### Things to add in the future
+
+1. Add a form to another page that allows an authenticated user to add items to the database.
+2. Allow a user to search by teams and shows history of players for that team.
+
+
+### Issues Encountered
+
+1. 
+
+
+### User Stories
+
+* As a user, I want to be able to retrieve a players statistics.
+* As a user, I want to be able to add a new player/team to the database.
 
 
 # Wire Frame
