@@ -1,1 +1,15 @@
 https://app.diagrams.net/
+
+
+Backend User Storeies
+
+* As a user, I want to be able to add a player to the database.
+* As a user, I want to be able to update a players statistics.
+* As a user, I want to be able to add a team to a players information.
+* As a user, I want to be able to return one or all players.
+
+
+Frontend User Stories
+
+* As a user, I want to be able to retrieve a players statistics.
+* As a user, I want to be able to add a new player/team to the database.
