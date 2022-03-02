@@ -21,6 +21,7 @@ https://www.basketball-reference.com/
 1. Add a form to another page that allows an authenticated user to add items to the database.
 2. Allow a user to search by teams and shows history of players for that team.
 3. Allow a user to view a players statistics broken down by all teams they played for.
+4. Alert a user when a player is not found in the database.
 
 
 ### Issues Encountered
